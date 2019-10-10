@@ -6,7 +6,7 @@ import {
 // iview基础模块
 const components = {
     Page
-}
+};
 
 const iviewModule = {
     ...components
