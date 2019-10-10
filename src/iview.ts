@@ -1,7 +1,9 @@
 import Vue from 'vue'
+// @ts-ignore
+// @ts-ignore
 import {
     Page
-} from 'view-design'
+} from 'iview'
 
 // iview基础模块
 const components = {
@@ -33,4 +35,4 @@ Object.keys(iviewModule).forEach(
         // @ts-ignore
         Vue.component(key, iviewModule[key])
     }
-)
+);

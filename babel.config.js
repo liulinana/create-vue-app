@@ -6,7 +6,7 @@ module.exports = {
       [
           "import",
         {
-            "libraryName": "view-design",
+            "libraryName": "iview",
             "style": true
         }
       ],
