@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <Page :total="100" />
-    <el-button type="primary">主要按钮</el-button>
+    <Button type="primary">主要按钮</Button>
     <router-view/>
   </div>
 </template>

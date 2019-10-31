@@ -2,16 +2,18 @@ import Vue from 'vue'
 // @ts-ignore
 // @ts-ignore
 import {
-    Page
+    Page,
+    Button
 } from 'view-design'
 
 // iview基础模块
 const components = {
-    Page
+    Page,
+    Button
 };
 
 const iviewModule = {
-    ...components
+    ...components,
     // 不能和html标签重复的组件，添加别名(除了Switch、Circle在使用中必须是iSwitch、iCircle,其他都可以不加"i")
     // iButton: Button,
     // iCircle: Circle,

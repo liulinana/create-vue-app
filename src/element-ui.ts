@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import {
-    Button
+    Tabs
 } from 'element-ui'
 
 const components = [
-    Button
+    Tabs
 ];
 
 // 循环注册全局组件
