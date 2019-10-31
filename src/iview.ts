@@ -3,7 +3,7 @@ import Vue from 'vue'
 // @ts-ignore
 import {
     Page
-} from 'iview'
+} from 'view-design'
 
 // iview基础模块
 const components = {
