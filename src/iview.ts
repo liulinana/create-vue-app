@@ -4,7 +4,7 @@ import Vue from 'vue'
 import {
     Page,
     Button
-} from 'view-design'
+} from 'iview'
 
 // iview基础模块
 const components = {

@@ -55,7 +55,7 @@ export default class Home extends Vue {
     let ary:string[] = [];
     // let dd =ary ?.length;
     // let cc = s ?? "dd"
-    {...ary}
+    // {...ary}
     this.msg = this.msg.split('').reverse().join('')
   }
 

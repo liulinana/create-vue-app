@@ -10810,10 +10810,10 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-view-design@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/view-design/-/view-design-4.0.0.tgz#36250fee499bbbfb8b0b5cc235536a5fed7bf0d7"
-  integrity sha512-gdVOsO7X4Pcz6dG0J9aUAI9PQ7HnmyFORg3CX9AgFGa4e1X5+TldNpyQa5v5bFZTWAbNLNLTFWn+fuAlQqINWQ==
+view-design@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/view-design/-/view-design-4.0.2.tgz#983450fb4fd0a56642dc13ebc7e585c0aae64fc8"
+  integrity sha512-EjuEqLYHP5aH94a197X/+kQ5305qTiaT+MwqpgrZEh+Em2DeZmu4enZR9QznffLyLBQJrrJntRiLr8xk5PQgvA==
   dependencies:
     async-validator "^1.10.0"
     deepmerge "^2.2.1"
@@ -10927,6 +10927,11 @@ vue@^2.6.10:
   version "2.6.10"
   resolved "https://registry.npm.taobao.org/vue/download/vue-2.6.10.tgz#a72b1a42a4d82a721ea438d1b6bf55e66195c637"
   integrity sha1-pysaQqTYKnIepDjRtr9V5mGVxjc=
+
+vuex-class@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/vuex-class/-/vuex-class-0.3.2.tgz#c7e96a076c1682137d4d23a8dcfdc63f220e17a8"
+  integrity sha512-m0w7/FMsNcwJgunJeM+wcNaHzK2KX1K1rw2WUQf7Q16ndXHo7pflRyOV/E8795JO/7fstyjH3EgqBI4h4n4qXQ==
 
 vuex@^3.0.1:
   version "3.1.1"
