@@ -63,7 +63,8 @@ const ajaxPromise =function (method, url, data, params, cancel, show=true){
             ).catch(
                 err => {
                     if(show){
-                        // message.error(err.message, 3);
+                        // @ts-ignore
+                        this.$Message.error(err.message, 3);
                     }
                     reject(err);
                 }

@@ -3,13 +3,15 @@ import Vue from 'vue'
 // @ts-ignore
 import {
     Page,
-    Button
+    Button,
+    Message
 } from 'iview'
 
 // iview基础模块
 const components = {
     Page,
-    Button
+    Button,
+    Message
 };
 
 const iviewModule = {

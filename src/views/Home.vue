@@ -46,13 +46,13 @@ export default class Home extends Vue {
   }
 
   handelClick():void{
-    // this.HOME_MUTATION(10)
-    this.$store.dispatch('sync',{
-      mutationTypes:'HOME_MUTATION',
-      num: 100
-      }).then(res=>{
-
-    })
+    this.HOME_MUTATION(10)
+    // this.$store.dispatch('sync',{
+    //   mutationTypes:'HOME_MUTATION',
+    //   num: 100
+    //   }).then(res=>{
+    //
+    // })
   }
 
   msgClick(){
