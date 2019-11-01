@@ -1,18 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import {modelA} from "@/vuex/modules/HomeModules";
 
 Vue.use(Vuex);
 
+// @ts-ignore
 export default new Vuex.Store({
-  state: {
-    count: 0
-  },
-  mutations: {
-    increment (state) {
-      state.count++
-    }
-  },
-  actions: {
-
+  modules:{
+    a: modelA
   }
-})
+});
+

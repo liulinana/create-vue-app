@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <p id="title">{{count}}</p>
+    <p id="title">{{this.$store.state.a.count}}</p>
     <Button type="primary" @click="handelClick">Primary</Button>
     <img alt="Vue logo" src="../assets/logo.png">
 
@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import {State, Mutation} from 'vuex-class';
+import {State, Mutation, Getter, Action} from 'vuex-class';
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 import store from '@/store';
 
@@ -24,7 +24,10 @@ import store from '@/store';
 
 export default class Home extends Vue {
   @State private count !: number;
-  @Mutation private increment!: (amount: number) => void;
+  @Mutation private HOME_MUTATION!: (amount: number) => void;
+  @Getter private doneTodos: any;
+  @Getter private anthorData: any;
+  @Action private sync!: (data: any) => void;
   msg: any;
   x: [string, number] | undefined;
   Color: {
@@ -36,26 +39,27 @@ export default class Home extends Vue {
 
   data () {
     return {
-      theme1: store.state.count,
+      theme1: this.$store.state.a.count,
       msg: 'Hello Vue.js!',
 
     }
   }
 
   handelClick():void{
-    this.increment(10)
+    // this.HOME_MUTATION(10)
+    this.$store.dispatch('sync',{
+      mutationTypes:'HOME_MUTATION',
+      num: 100
+      }).then(res=>{
+
+    })
   }
-  bb(dd:any){
-    console.log(dd)
-  }
-  msgClick(s: any){
+
+  msgClick(){
     this.x = ['hello', 10];
     this.x[0] = 'world';
-    // let xx= 5 |> this.bb
-    let ary:string[] = [];
-    // let dd =ary ?.length;
-    // let cc = s ?? "dd"
-    // {...ary}
+
+    // console.log(this.count,this.doneTodos,this.$store.getters.anthorData,'arry')
     this.msg = this.msg.split('').reverse().join('')
   }
 
