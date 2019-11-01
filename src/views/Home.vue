@@ -21,7 +21,6 @@ import store from '@/store';
     HelloWorld,
   },
 })
-
 export default class Home extends Vue {
   @State private count !: number;
   @Mutation private HOME_MUTATION!: (amount: number) => void;
